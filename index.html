@@ -52,7 +52,7 @@
                 <label for="epiname_filter" class="label">震央地名</label>
                 <div class="control">
                     <div class="select is-multiple">
-                        <select multiple size="10" id="epiname_filter">
+                        <select multiple size="8" id="epiname_filter">
                             <option value="石狩地方北部">石狩地方北部</option>
                             <option value="石狩地方中部">石狩地方中部</option>
                             <option value="石狩地方南部">石狩地方南部</option>
@@ -390,8 +390,12 @@
                 </div>
             </div>
             <div class="field">
-                <label for="mag_filter" class="label">最小マグニチュード</label>
-                <input class="control" type="number" id="mag_filter" step="0.1">
+                <label for="min_mag" class="label">最小マグニチュード</label>
+                <input class="control" type="number" id="min_mag" step="0.1">
+            </div>
+            <div class="field">
+                <label for="max_mag" class="label">最大マグニチュード</label>
+                <input class="control" type="number" id="max_mag" step="0.1">
             </div>
             <div class="control">
                 <button class="button is-primary" onclick="runFilter();">絞り込み</button>

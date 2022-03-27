@@ -97,6 +97,12 @@ function runFilter() {
     if (document.getElementById('epiname_filter').selectedOptions.length !== 0) {
         options.epicenterNames = Array.from(document.getElementById('epiname_filter').selectedOptions, o => o.getAttribute('value'));
     }
+    if (document.getElementById('min_mag').value !== '') {
+        options.minimumMagnitude = Number(document.getElementById('min_mag').value);
+    }
+    if (document.getElementById('max_mag').value !== '') {
+        options.maximumMagnitude = Number(document.getElementById('max_mag').value);
+    }
     plot('20220316', options);
     changeTab('list');
 }
