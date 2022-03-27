@@ -1,0 +1,24 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+body {
+    display: grid;
+    grid-template-rows: 100% 100%;
+    grid-template-columns: 6fr 4fr;
+    grid-template-areas:
+        "map panel";
+}
+#map {
+    grid-area: map;
+    /* background-color: #1b1b1b; */
+}
+#panel {
+    grid-area: panel;
+    overflow: auto;
+}
+.d-none {
+    display: none;
+}
