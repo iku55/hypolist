@@ -22,3 +22,6 @@ body {
 .d-none {
     display: none;
 }
+.modal {
+    z-index: 1000;
+}
