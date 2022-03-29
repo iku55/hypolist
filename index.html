@@ -22,6 +22,7 @@
                 <li id="list" class="is-active" onclick="changeTab('list');"><a>一覧</a></li>
                 <li id="count" onclick="changeTab('count');"><a>カウント</a></li>
                 <li id="filter" onclick="changeTab('filter');"><a>絞り込み</a></li>
+                <li id="dldata" onclick="changeTab('dldata');"><a>データ出力</a></li>
             </ul>
         </div>
         <div id="list_tab_content">
@@ -88,6 +89,12 @@
                 <button class="button is-primary" onclick="runFilter();">絞り込み</button>
                 <button class="button is-secondary" onclick="clearFilter();">絞り込みを解除</button>
             </div>
+        </div>
+        <div id="dldata_tab_content">
+            <label class="checkbox">
+                <input type="checkbox" id="bomcheckbox">BOMを付与する(Excelで読み込んだ時文字化けしなくなります)
+            </label>
+            <button class="button is-light" onclick="downloadAsCsv();">データをダウンロード(CSV)</button>
         </div>
     </div>
 
