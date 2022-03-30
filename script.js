@@ -165,6 +165,9 @@ function runFilter() {
     changeTab('list');
 }
 function clearFilter() {
+    clearEpiName();
+    document.getElementById('min_mag').value = '';
+    document.getElementById('max_mag').value = '';
     plot(targetDateText, {});
     changeTab('list');
 }
