@@ -17,7 +17,8 @@ var map = L.map('map', {
 var tileLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
 });
-map.attributionControl.addAttribution('データ: 気象庁 震源リスト');
+map.attributionControl.addAttribution('<a href="https://twitter.com/search?q=%2523NoWar">#NoWar</a>');
+map.attributionControl.addAttribution('<a href="https://www.data.jma.go.jp/eqev/data/daily_map/index.html">データ: 気象庁 震源リスト</a>');
 tileLayer.addTo(map);
 
 function changeTab(tab) {
