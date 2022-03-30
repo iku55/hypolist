@@ -195,7 +195,11 @@ function onChangeDate() {
     }
     targetDateText = document.getElementById('date').value.replaceAll('-','');
     targetDate = new Date(document.getElementById('date').value.replaceAll('-','/'));
-    runFilter();
+    if (document.getElementById('use_filter_new').checked) {
+        runFilter();
+    } else {
+        plot(targetDateText, {});
+    }
 }
 
 document.getElementById('date').min = '2021-08-01';
