@@ -86,7 +86,10 @@ function plot(date, options) {
             
             var marker = L.circleMarker([hypocenter.latitude,hypocenter.longitude],{
                 radius: size,
-                color: color,
+                fillColor: color,
+                fillOpacity: 1,
+                color: '#fff',
+                weight: 1,
                 type: 'marker'
             })
             .bindPopup(hypocenter.time+'<br>'+hypocenter.name+'<br>M'+hypocenter.magnitude+'<br>深さ'+hypocenter.depth+'km');
