@@ -74,9 +74,9 @@ function plot(date, options) {
             var color;
             var size;
             if (hypocenter.magnitude == null) {
-                size = 3;
+                size = 3.5;
             } else {
-                size = Number(hypocenter.magnitude) * 3;
+                size = Number(hypocenter.magnitude) * 3.5;
             }
             if (Number(hypocenter.depth) >= 300) color = '#00d';
             else if (Number(hypocenter.depth) >= 100) color = '#dd4';
